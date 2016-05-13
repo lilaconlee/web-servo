@@ -1,0 +1,7 @@
+{
+  "name": "web-servo",
+  "version": "0.0.0",
+  "dependencies": {
+    "servo-pca9685": "^0.1.3"
+  }
+}

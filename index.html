@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>=^..^=</title>
+<head>
+  <meta charset="UTF-8">
+    <style>
+    button {
+      border: none;
+      background-color: #33CCFF;
+      font-size: 1.25em;
+      color: #fff;
+      padding: 0.5em 2em;
+      border-radius: 3px;
+
+      transition: opacity 222ms, background-color 222ms;
+    }
+  </style>
+</head>
+<body>
+  <button class="feed-button">feed me</button>
+  <script type="text/javascript">
+    var button = document.querySelector('.feed-button');
+
+    button.addEventListener('click', function () {
+      var button = event.target;
+
+      var req = new XMLHttpRequest();
+
+      req.open('GET', '/servo');
+      req.send();
+    });
+  </script>
+</body>
+</html>
+
